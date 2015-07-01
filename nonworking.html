@@ -1,0 +1,23 @@
+<html>
+  <head>
+     <title>PDFObject Example</title>
+     <script type="text/javascript" src="pdfobject.js">
+
+     function embedPDF(){
+
+       var myPDF = new PDFObject({ 
+
+         url: 'sample.pdf',
+         //pdfOpenParams: { search: 'suite', highlight: '40,40,40,40' }
+		 pdfOpenParams: { zoom: '500' }
+
+       }).embed();  
+
+     }
+
+     window.onload = embedPDF; //Feel free to replace window.onload if needed.
+    </script>
+  </head>
+</html>
+
+<!-- insert in the document head -->
